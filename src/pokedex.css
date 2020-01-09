@@ -1,0 +1,185 @@
+body {
+  background-image: url("greenImg.jpg");
+  height: 100%; 
+  background-position: center;
+  background-repeat: repeat;
+  background-size: cover;
+    color: white;
+    margin: 0;
+    font-family: rubik;
+    text-align: center;
+    
+}
+
+h1 {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 54px;
+}
+
+#pokedex {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 20px;
+    padding-inline-start: 0;
+}
+
+.card {
+    list-style: none;
+    padding: 0px;
+    /* background-color: #f4f4f4; */
+    color: #222;
+    text-align: center;
+}
+
+.card:hover {
+    animation: bounce 0.5s linear;
+}
+
+.card-title {
+    text-transform: capitalize;
+    margin-bottom: 0px;
+    font-size: 32px;
+    font-weight: normal;
+}
+.card-subtitle {
+    margin-top: 5px;
+    color: #666;
+    font-weight: lighter;
+}
+
+.card-image {
+    height: 100px;
+}
+
+@keyframes bounce {
+    20% {
+        transform: translateY(-6px);
+    }
+    40% {
+        transform: translateY(0px);
+    }
+
+    80% {
+        transform: translateY(-2px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.search-box {
+	position:absolute;
+	background : #2f3640;
+	height:40px;
+	border-radius:40px;
+	padding:10px;
+	margin-left: 500px;
+}
+
+.search-box:hover > .search-txt {
+	width :240px;
+	padding:0 6px;
+}
+
+/* .search-box:hover > .search-btn {
+	background: white;
+} */
+
+.search-btn {
+	color :#e84118;
+	float:left;
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	background: #2f3640;
+	display: flex;
+	justify-content :center;
+	align-items:center;
+	transition:0.4s;
+	
+}
+.search-txt {
+	border : none;
+	background: none;
+	outline: none;
+	float:right;
+	padding:0;
+	color:white;
+	font-size:16px;
+    transition:0.4s;
+    line-height:40px;
+    width:0px;
+}
+
+.btn:hover {
+  background-color: transparent;
+  animation: bounce 0.5s linear;
+}
+
+.btn.active img {
+ border-radius: 50%;
+ height:50px;
+ width:50px;
+}
+
+.btn img {
+ border-radius: 50%;
+ height:50px;
+ width:50px;
+}
+
+.btn.active {
+  background-color: transparent;
+  color: white;
+ 
+}
+
+.btn {
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  background-color: transparent;
+  cursor: pointer;
+  border-radius: 50%;
+  outline:#0000a0;
+  border : thick;
+}
+
+.popup {
+	position :fixed;
+	top:0;
+	left:0;
+	height:100vh;
+	width:100vw;
+	background: #f4f4f4;
+	opacity:0.95;
+	justify-content:center;
+	aligh-items:center;
+}
+
+#closeBtn {
+	position: absolute;
+	top:20px;
+	right:20px;
+	
+}
+
+button {
+	background-color: orangered;
+	padding: 10px 20px;
+	border: none;
+	color :white;
+	border-radius :3px;
+	transition :transform 100ms;
+}
+
+button:hover {
+	cursor: pointer;
+	transform : translateY(-1px);
+	box-shadow: 0px 1px 2px;
+}
+}
+}
+}
+}

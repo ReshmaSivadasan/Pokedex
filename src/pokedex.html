@@ -1,0 +1,47 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+        <title>Quick's Pokedex</title>
+       
+        <link rel="stylesheet" href="pokedex.css" />
+        <link
+            href="https://fonts.googleapis.com/css?family=Rubik&display=swap"
+            rel="stylesheet"
+        />
+        
+    </head>
+    <body>
+    
+      <img src="maintag.jpg" width="400" height="100" alt="logo" style="margin-top:50px" /> 
+     
+    
+    <div id="myBtnContainer">
+  <button class="btn active" onclick="filterSelection('all')"><img src="pokewater.jpg" alt=""></button>
+  <button class="btn" onclick="filterSelection('normal')"> Normal</button>
+  <button class="btn" onclick="filterSelection('electric')"><img src="electric.png" alt=""></button>
+  <button class="btn" onclick="filterSelection('water')"><img src="pokemystic.jpg" alt=""> </button>
+   <button class="btn" onclick="filterSelection('fire')"><img src="fire.jpg" alt=""></button>
+  <button class="btn" onclick="filterSelection('bug')"> bug</button>
+  <button class="btn" onclick="filterSelection('dragon')"> dragon</button>
+   <button class="btn" onclick="filterSelection('psychic')"> psychic</button>
+  
+  </div>
+  
+  <div class ="search-box">
+	    <input id="mypoke" class="search-txt" type="text" name = "" onkeyup="myFunction()" placeholder="Type to search your Pokemons!!">
+		    <a class = "search-btn" href ="#" id="searchItem">
+		    	<i class="fas fa-search"></i>
+		    </a>
+    </div>
+    
+    <div style="margin-top: 100px">
+      <ul id="pokedex"></ul>
+    </div>
+        <script src="pokedex.js"></script>
+    </body>
+</html>
